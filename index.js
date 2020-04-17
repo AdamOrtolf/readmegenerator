@@ -51,17 +51,10 @@ function init () {
         .then(( { data } )=> { 
               writeToFile("readme1.md", markdown({...response, ...data}))
         });
-
   })
 }
-
-
 function writeToFile (filename, data) {
       return fs.writeFileSync(path.join(process.cwd(), filename), data)
       
 }
-
-
-
-
 init()
