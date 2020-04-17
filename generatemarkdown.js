@@ -1,12 +1,12 @@
 function generateMarkdown (data) {
       return `
-      #${data.title}
-      #${data.description}
-      #${data.installation}
-      #${data.usage}
-      #${data.license}
-      #${data.contributing}
-      #${data.tests}
+      Project Title: #${data.title}
+      Project Description: #${data.description}
+      Installations Required: #${data.installation}
+      Usage: #${data.usage}
+      License: #${data.license}
+      Contributing: #${data.contributing}
+      Tests: #${data.tests}
      
 
       `
